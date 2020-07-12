@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--EditText: Input text to be saved as pdf file-->
+        <EditText
+            android:id="@+id/textEt"
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=" "
+            android:background="@color/colorGray"
+            android:gravity="start"
+            android:scrollbars="vertical"
+            android:hint="Enter text..."
+            android:inputType="textMultiLine"
+            android:minHeight="200dp"
+            android:padding="8dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+        <!--Button:   Saves inputted data as pdf file-->
+        <Button
+            android:id="@+id/saveBtn"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:padding="8dp"
+            android:background="@drawable/save_bg"
+            android:text="Save Pdf"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/delete_bg"
+            android:text="Delete All"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
